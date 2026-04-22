@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A read on where software fits in Tubender's stack, and where it doesn't.</title>
+<meta name="description" content="Saw the v1 out of the Northeastern capstone and the September Alpha Fund writeup. The software layer that sits above the machine, the thing that turns a Procore take-off into a bend program, that's the part I want to talk about." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="https://www.tubender.com/" target="_blank" rel="noopener" class="logo-link" aria-label="Tubender">
+        <img src="logo.webp" alt="Tubender" class="logo" />
+      </a>
+      <span class="header-tag">Prepared read. For Jaison and Josh.</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">For Tubender</p>
+        <h1>A read on where software fits in Tubender's stack, and where it doesn't.</h1>
+        <p class="hero-sub">Hardware cuts on-site bending time 16x. The question that shows up on the first real data-center pilot is a different one. This is a ten-minute version of it.</p>
+        <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt</a>
+      </div>
+    </section>
+
+    <section class="pitch">
+      <div class="container">
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num">16x</span>
+            <span class="stat-label">Faster on-site bending</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">60 / 30 / 10</span>
+            <span class="stat-label">Code, rules, AI</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">v2</span>
+            <span class="stat-label">Machine in development</span>
+          </div>
+        </div>
+
+        <article class="body-copy">
+          <h2>Opening</h2>
+          <p>Tubender's machine cuts on-site bending time 16x and takes a 10-foot conduit stick through every bend in one pass. That is the hardware story, and it is the story that wins pitch competitions and Alpha Fund grants. The question that shows up on the first real data-center pilot is different. Who writes the bend program. Where does the take-off live. What happens when there are three machines on three sites and every foreman has their own spreadsheet.</p>
+
+          <h2>The frame</h2>
+          <p>Most software problems split three ways. About 60% is traditional code and database work. About 30% is rule-based logic. About 10% is where AI actually earns its seat. On a programmable conduit bender, the take-off parser and the bend-list schema are 60% work. The springback compensation and the trade-vocabulary translation (offsets, stub-90s, saddles) are 30% work. The 10% where AI helps is narrow: reading messy MEP drawings and flagging the bends a human should double-check. Skipping this split and writing a full AI bender assistant is how seed-stage hardware teams spend nine months on the wrong layer.</p>
+
+          <h2>A relevant engagement</h2>
+          <p>Feeld's CTO ran a short sprint with Eduba. A scoped sprint, a workshop, three advisory calls, and a written context architecture. What came out was a plan for which parts of their stack to build, which to buy, and which to leave alone for another quarter. That is the shape of a conversation sized for a two-founder team that still has to ship a v2.</p>
+
+          <h2>The paper</h2>
+          <p>Interpretable Context Methodology, submitted to ACM TiiS. One read. <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a></p>
+
+          <h2>The partnership line</h2>
+          <p>Eduba partners with <a href="https://nlplogix.com/" target="_blank" rel="noopener">NLP Logix</a> for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If the right answer is get a team to build the controller and the quoting tool, that is an NLP conversation, not an Eduba one.</p>
+        </article>
+
+        <div class="cta-card">
+          <h3>CTA</h3>
+          <p>30 minutes with Matt. Bring the bend-plan workflow as it stands today. We will sketch where the software layer should sit and where it shouldn't.</p>
+          <p class="cta-owner">Matt Creamer, Chief Revenue Officer, Eduba.</p>
+          <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a>
+        </div>
+
+        <aside class="credibility">
+          <h3>Who is behind this</h3>
+          <p>Eduba is a veteran-owned AI consulting and training firm. 1,500+ people trained across enterprise engagements since May 2025. Executive cohorts delivered for <strong>KPMG UK (Big Four)</strong>. Published methodology in ACM TiiS (<a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">ICM</a>) and arXiv.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prepared by Eduba: <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+    </div>
+  </footer>
+</body>
+</html>
